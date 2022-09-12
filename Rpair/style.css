@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin-left: -20px;
+}
+html, body {
+  background: #E4E3FF;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bar {
+  position: relative;
+  height: 2px;
+  width: 50%;
+  margin: 0 auto;
+  background: #5D2BFF;
+  margin-top: 25%;
+}
+
+.circle {
+  position: absolute;
+  top: -30px;
+  margin-left: -30px;
+  height: 60px;
+  width: 60px;
+  left: 0;
+  background: #5D2BFF;
+  border-radius: 30%;
+  -webkit-animation: move 5s infinite;
+}
+
+p.pload {
+  position: absolute;
+  top: -35px;
+  left: 102.5%;
+  text-transform: uppercase;
+  color: #E4E3FF;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@-webkit-keyframes move {
+  0% {left: 0;}
+  50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+  100% {right: 100%;}
+} 
+.sign-flex{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+button.create {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #5D2BFF;
+    border-style: none;
+    padding: 15.5px 71px;
+    box-shadow: 0px 4px 20px 0px #0000FF40;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.login{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15.5px 71px;
+    line-height: 19px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+img.logo{
+    width: 390px;
+    height: 100px;
+}
+
+
+
+.content-flex{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+/* <====================== Page1: Create Account Page Start ================> */
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+form input,select{
+    background-color: transparent;
+    border-width: thin;
+    padding: 10px 10px;
+    width: 125%;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: -40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #5D2BFF;
+    border-style: none;
+    padding: 15.5px 71px;
+    box-shadow: 0px 4px 20px 0px #0000FF40;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+/* <====================== Page1: Create Account Page End ================> */
+
+/* <====================== Page2: Login Page Start ================> */
+p a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: -0px;
+}
+p.forgotp{
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.success{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+/* <====================== Page2: Login Page End ================> */
+
+
+
+
+
+
+@media (max-width:766px) {
+    .bar{
+        margin-top: 100%;
+    }
+}
+@media (max-width:425px) {
+    img.logo{
+        display: none;
+    }
+}

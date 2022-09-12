@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>RPAIR</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<!-- <=============== Preloader Start =============> -->
+<div id="loader">
+    <div class="bar">
+        <div class="circle"></div>
+        <p class="pload">RPAIR</p>
+    </div>
+</div>
+<!-- <=============== Preloader Start =============> -->
+
+<div id="content" style="display: none;">
+    <div class="sign-flex">
+        <a href="./create.html"><button class="create">Create Account</button></a>
+        <a href="./login.html"><button class="login">Log In</button></a>
+
+        </div>
+    </div>
+</div>
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 7000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }
+</script>
+</body>
+</html>
