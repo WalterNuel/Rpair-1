@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-*{
-    margin-left: -20px;
-}
+
 html, body {
   background: #E4E3FF;
   width: 100%;
@@ -87,8 +85,9 @@ button.create {
     cursor: pointer;
 }
 img.logo{
-    width: 390px;
+    width: 30%;
     height: 100px;
+    flex: 0 0 50%;
 }
 
 
@@ -106,6 +105,7 @@ img.logo{
 /* <====================== Page1: Create Account Page Start ================> */
 form{
     display: flex;
+    flex: 0 0 50%;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
@@ -114,7 +114,7 @@ form input,select{
     background-color: transparent;
     border-width: thin;
     padding: 10px 10px;
-    width: 125%;
+    width: 70%;
     border-radius: 5px;
 }
 input::placeholder{
@@ -140,7 +140,7 @@ input::placeholder{
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    width: 70%;
+    width: 50%;
     text-align: center;
 }
 a {
@@ -180,5 +180,13 @@ p.forgotp{
 @media (max-width:425px) {
     img.logo{
         display: none;
+        flex: 0 0 0;
+    }
+    form{
+        flex: 0 0 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
     }
 }
