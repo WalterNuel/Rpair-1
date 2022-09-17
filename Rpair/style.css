@@ -85,9 +85,9 @@ button.create {
     cursor: pointer;
 }
 img.logo{
-    width: 30%;
-    height: 100px;
-    flex: 0 0 50%;
+    /* width: 30%;
+    height: 100px; */
+    flex: 0 0 35%;
 }
 
 
@@ -97,7 +97,7 @@ img.logo{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
 }
@@ -105,16 +105,21 @@ img.logo{
 /* <====================== Page1: Create Account Page Start ================> */
 form{
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 70%;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 30px;
 }
 form input,select{
+    text-align: center;
+    align-content: center;
+    align-items: center;
     background-color: transparent;
     border-width: thin;
     padding: 10px 10px;
-    width: 70%;
+    width: 30%;
     border-radius: 5px;
 }
 input::placeholder{
@@ -140,7 +145,7 @@ input::placeholder{
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    width: 50%;
+    width: 30%;
     text-align: center;
 }
 a {
@@ -152,13 +157,8 @@ a {
 p a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
-    margin-left: -0px;
 }
-p.forgotp{
-    text-align: center;
-    margin-top: -20px;
-    margin-left: 20px;
-}
+
 .success{
     display: flex;
     justify-content: center;
@@ -166,7 +166,14 @@ p.forgotp{
     flex-direction: column;
 }
 /* <====================== Page2: Login Page End ================> */
-
+.otp-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(10, 0, 44, 0.5);
+}
 
 
 
